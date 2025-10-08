@@ -1,5 +1,5 @@
 
-# Preety Good Privacy Chat Application
+# Pretty Good Privacy Chat Application
 
 <img src="./Images/pgp.jpg" alt="PGP Image">
 
