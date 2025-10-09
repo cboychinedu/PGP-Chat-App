@@ -1,5 +1,6 @@
 # Importing the necessary modules 
 import os 
+import bcrypt
 from Database.database import DatabaseManager
 from flask import Blueprint, jsonify, request
 
@@ -43,6 +44,12 @@ def register():
         
         # Else register the user on the database 
         else: 
+            # Hashing the user passowrd 
+            passwordHash = bcrypt.hashpw(password, bcrypt.gensalt(5))
+
+            # Saving the userdetails into the database 
+            print(passwordHash)
+
             # Register the user on the database 
             return jsonify({"message": verifyUser})  
         

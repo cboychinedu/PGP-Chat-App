@@ -58,6 +58,10 @@ class DatabaseManager:
         
         # Return True if a user is found, otherwise False
         return result is not None
+    
+    # Save the user to the database 
+    def saveUser(self, username, email, password, fullname): 
+        pass 
 
     # def execute_query(self, query, params=()):
     #     """Execute a SQL query and return the results."""
