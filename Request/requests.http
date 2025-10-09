@@ -1,0 +1,10 @@
+## POST request to the register route 
+POST "http://localhost:3001/register"
+content-type: application/json
+
+{
+    "fullname": "Mbonu Chinedu",
+    "username": "cmbonu",
+    "emailAddress": "cmbonu@ymail.com",
+    "password": "12345"
+}

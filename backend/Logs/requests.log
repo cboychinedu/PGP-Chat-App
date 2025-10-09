@@ -1,0 +1,94 @@
+2025-10-09 09:52:58 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:3001
+2025-10-09 09:52:58 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 09:52:58 - INFO -  * Restarting with stat
+2025-10-09 09:52:58 - WARNING -  * Debugger is active!
+2025-10-09 09:52:58 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 09:53:03 - INFO - Request: GET / - IP: 127.0.0.1
+2025-10-09 09:53:03 - INFO - 127.0.0.1 - - [09/Oct/2025 09:53:03] "GET / HTTP/1.1" 200 -
+2025-10-09 09:56:47 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 09:56:47 - INFO -  * Restarting with stat
+2025-10-09 09:56:47 - WARNING -  * Debugger is active!
+2025-10-09 09:56:47 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 09:56:50 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 09:56:51 - INFO -  * Restarting with stat
+2025-10-09 09:56:51 - WARNING -  * Debugger is active!
+2025-10-09 09:56:51 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 09:57:44 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 09:57:44 - INFO -  * Restarting with stat
+2025-10-09 09:57:45 - WARNING -  * Debugger is active!
+2025-10-09 09:57:45 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 09:58:15 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 09:58:15 - INFO -  * Restarting with stat
+2025-10-09 09:58:15 - WARNING -  * Debugger is active!
+2025-10-09 09:58:15 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 09:58:27 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 09:58:27 - INFO -  * Restarting with stat
+2025-10-09 09:58:28 - WARNING -  * Debugger is active!
+2025-10-09 09:58:28 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 10:01:12 - INFO - Request: GET / - IP: 127.0.0.1
+2025-10-09 10:01:12 - INFO - 127.0.0.1 - - [09/Oct/2025 10:01:12] "GET / HTTP/1.1" 200 -
+2025-10-09 10:01:13 - INFO - Request: GET / - IP: 127.0.0.1
+2025-10-09 10:01:13 - INFO - 127.0.0.1 - - [09/Oct/2025 10:01:13] "GET / HTTP/1.1" 200 -
+2025-10-09 10:01:14 - INFO - Request: GET / - IP: 127.0.0.1
+2025-10-09 10:01:14 - INFO - 127.0.0.1 - - [09/Oct/2025 10:01:14] "GET / HTTP/1.1" 200 -
+2025-10-09 10:01:50 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 10:01:50 - INFO -  * Restarting with stat
+2025-10-09 10:01:50 - WARNING -  * Debugger is active!
+2025-10-09 10:01:50 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 10:01:51 - INFO - Request: GET / - IP: 127.0.0.1
+2025-10-09 10:01:51 - INFO - 127.0.0.1 - - [09/Oct/2025 10:01:51] "GET / HTTP/1.1" 200 -
+2025-10-09 10:33:47 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:3001
+2025-10-09 10:33:47 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 10:33:47 - INFO -  * Restarting with stat
+2025-10-09 10:33:47 - WARNING -  * Debugger is active!
+2025-10-09 10:33:47 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 10:42:37 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 10:42:37 - INFO - 127.0.0.1 - - [09/Oct/2025 10:42:37] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-10-09 10:43:50 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 10:43:51 - INFO -  * Restarting with stat
+2025-10-09 10:43:51 - WARNING -  * Debugger is active!
+2025-10-09 10:43:51 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 10:44:13 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 10:44:13 - INFO -  * Restarting with stat
+2025-10-09 10:44:14 - WARNING -  * Debugger is active!
+2025-10-09 10:44:14 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 10:44:20 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 10:44:20 - INFO - 127.0.0.1 - - [09/Oct/2025 10:44:20] "POST /register HTTP/1.1" 200 -
+2025-10-09 10:45:26 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 10:45:26 - INFO -  * Restarting with stat
+2025-10-09 10:45:27 - WARNING -  * Debugger is active!
+2025-10-09 10:45:27 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 10:45:38 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 10:45:38 - INFO - 127.0.0.1 - - [09/Oct/2025 10:45:38] "POST /register HTTP/1.1" 200 -
+2025-10-09 10:47:55 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 10:47:55 - INFO -  * Restarting with stat
+2025-10-09 10:51:06 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:3001
+2025-10-09 10:51:06 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 10:51:06 - INFO -  * Restarting with stat
+2025-10-09 10:51:06 - WARNING -  * Debugger is active!
+2025-10-09 10:51:06 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 10:51:20 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 10:51:20 - INFO - 127.0.0.1 - - [09/Oct/2025 10:51:20] "POST /register HTTP/1.1" 200 -
+2025-10-09 10:52:05 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Database/database.py', reloading
+2025-10-09 10:52:05 - INFO -  * Restarting with stat
+2025-10-09 10:52:05 - WARNING -  * Debugger is active!
+2025-10-09 10:52:05 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 10:52:35 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Database/database.py', reloading
+2025-10-09 10:52:35 - INFO -  * Restarting with stat
+2025-10-09 10:52:35 - WARNING -  * Debugger is active!
+2025-10-09 10:52:35 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 10:52:51 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 10:52:51 - INFO - 127.0.0.1 - - [09/Oct/2025 10:52:51] "POST /register HTTP/1.1" 200 -
+2025-10-09 10:53:26 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 10:53:26 - INFO -  * Restarting with stat
+2025-10-09 10:53:27 - WARNING -  * Debugger is active!
+2025-10-09 10:53:27 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 10:53:35 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 10:53:35 - INFO -  * Restarting with stat
+2025-10-09 10:53:35 - WARNING -  * Debugger is active!
+2025-10-09 10:53:35 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 10:53:55 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 10:53:55 - INFO - 127.0.0.1 - - [09/Oct/2025 10:53:55] "POST /register HTTP/1.1" 200 -
