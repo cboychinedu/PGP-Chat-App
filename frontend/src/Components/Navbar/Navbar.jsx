@@ -14,7 +14,8 @@ const Navbar = () => {
                     <a href="#how-it-works" className="text-blue-200 hover:text-blue-50 transition duration-150 mx-3">How it Works</a>
                     <a href="#security" className="text-blue-200 hover:text-blue-50 transition duration-150 mx-3">Security</a>
                     <a href="/about" className="text-blue-200 hover:text-blue-50 transition duration-150 mx-3"> About </a>
-                    <button className="ml-4 px-4 py-2 bg-blue-600 rounded-lg font-semibold hover:bg-blue-700 transition duration-150 text-white"> Login / Register</button>
+                    <button onClick={() => window.location.href="/login"}className="ml-4 px-4 py-2 bg-blue-600 rounded-lg font-semibold hover:bg-blue-700 transition duration-150 text-white"> Login </button>
+                    <button onClick={() => window.location.href="/register"}className="ml-4 px-4 py-2 bg-blue-600 rounded-lg font-semibold hover:bg-blue-700 transition duration-150 text-white"> Register</button>
                 </nav>
             </div>
         </header>

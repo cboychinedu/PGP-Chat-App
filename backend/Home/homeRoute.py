@@ -67,7 +67,7 @@ def register():
             if (data["status"] == "success"): 
                 # return the jsonify message 
                 return jsonify({
-                    "message": "Successfull update", 
+                    "message": "User registered successfully.", 
                     "status": "success", 
                     "statusCode": 200
                 }) 

@@ -1,6 +1,7 @@
 // Importing the necessary modules 
 import Home from './Pages/Home/Home'; 
 import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -21,6 +22,7 @@ class App extends Component {
           <Routes> 
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} /> 
+            <Route path="/register" element={<Register />} /> 
           </Routes>
         </BrowserRouter>
       </Fragment>

@@ -318,3 +318,31 @@
 2025-10-09 16:01:14 - INFO -  * Restarting with stat
 2025-10-09 16:01:14 - WARNING -  * Debugger is active!
 2025-10-09 16:01:14 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 19:59:14 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 19:59:14 - INFO - 127.0.0.1 - - [09/Oct/2025 19:59:14] "POST /register HTTP/1.1" 200 -
+2025-10-09 19:59:16 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 19:59:16 - INFO - 127.0.0.1 - - [09/Oct/2025 19:59:16] "POST /register HTTP/1.1" 200 -
+2025-10-09 20:01:34 - INFO - Request: OPTIONS /register - IP: 127.0.0.1
+2025-10-09 20:01:34 - INFO - 127.0.0.1 - - [09/Oct/2025 20:01:34] "OPTIONS /register HTTP/1.1" 200 -
+2025-10-09 20:01:34 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 20:01:34 - INFO - 127.0.0.1 - - [09/Oct/2025 20:01:34] "POST /register HTTP/1.1" 200 -
+2025-10-09 20:13:42 - INFO - Request: OPTIONS /register - IP: 127.0.0.1
+2025-10-09 20:13:42 - INFO - 127.0.0.1 - - [09/Oct/2025 20:13:42] "OPTIONS /register HTTP/1.1" 200 -
+2025-10-09 20:13:42 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 20:13:42 - INFO - 127.0.0.1 - - [09/Oct/2025 20:13:42] "POST /register HTTP/1.1" 200 -
+2025-10-09 20:13:57 - INFO - Request: OPTIONS /register - IP: 127.0.0.1
+2025-10-09 20:13:57 - INFO - 127.0.0.1 - - [09/Oct/2025 20:13:57] "OPTIONS /register HTTP/1.1" 200 -
+2025-10-09 20:13:57 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 20:13:57 - INFO - 127.0.0.1 - - [09/Oct/2025 20:13:57] "POST /register HTTP/1.1" 200 -
+2025-10-09 20:18:09 - INFO - Request: OPTIONS /register - IP: 127.0.0.1
+2025-10-09 20:18:09 - INFO - 127.0.0.1 - - [09/Oct/2025 20:18:09] "OPTIONS /register HTTP/1.1" 200 -
+2025-10-09 20:18:09 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 20:18:09 - INFO - 127.0.0.1 - - [09/Oct/2025 20:18:09] "POST /register HTTP/1.1" 200 -
+2025-10-09 20:19:27 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-09 20:19:27 - INFO -  * Restarting with stat
+2025-10-09 20:19:27 - WARNING -  * Debugger is active!
+2025-10-09 20:19:27 - INFO -  * Debugger PIN: 116-560-793
+2025-10-09 20:20:27 - INFO - Request: OPTIONS /register - IP: 127.0.0.1
+2025-10-09 20:20:27 - INFO - 127.0.0.1 - - [09/Oct/2025 20:20:27] "OPTIONS /register HTTP/1.1" 200 -
+2025-10-09 20:20:27 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-09 20:20:27 - INFO - 127.0.0.1 - - [09/Oct/2025 20:20:27] "POST /register HTTP/1.1" 200 -
