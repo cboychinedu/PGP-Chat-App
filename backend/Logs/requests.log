@@ -346,3 +346,9 @@
 2025-10-09 20:20:27 - INFO - 127.0.0.1 - - [09/Oct/2025 20:20:27] "OPTIONS /register HTTP/1.1" 200 -
 2025-10-09 20:20:27 - INFO - Request: POST /register - IP: 127.0.0.1
 2025-10-09 20:20:27 - INFO - 127.0.0.1 - - [09/Oct/2025 20:20:27] "POST /register HTTP/1.1" 200 -
+2025-10-09 20:25:46 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:3001
+2025-10-09 20:25:46 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 20:25:46 - INFO -  * Restarting with stat
+2025-10-09 20:25:47 - WARNING -  * Debugger is active!
+2025-10-09 20:25:47 - INFO -  * Debugger PIN: 116-560-793

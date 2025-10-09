@@ -7,6 +7,8 @@ This project is a secure chat application that leverages Pretty Good Privacy (PG
 
 ## Features
 
+<img src="./Images/websiteHome.png" alt="website home">
+
 - **End-to-End Encryption:** All messages are encrypted on the client side before being sent and decrypted only by the intended recipient.
 - **User Authentication:** Secure user registration and login system.
 - **Real-Time Messaging:** Instant messaging with real-time updates.
