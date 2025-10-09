@@ -1,5 +1,8 @@
 // Importing the necessary modules 
-import React, { Component, Fragment } from 'react'; 
+import Home from './Pages/Home/Home'; 
+import Login from './Pages/Login/Login';
+import React, { Component, Fragment } from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Defining the App component
 class App extends Component {
@@ -12,9 +15,16 @@ class App extends Component {
   render() {
     // Returning the JSX to be rendered
     return (
-      <Fragment>
-        <h1>{this.state.message}</h1>
+      <Fragment> 
+        <BrowserRouter>
+          {/* Setting the routes configurations */}
+          <Routes> 
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} /> 
+          </Routes>
+        </BrowserRouter>
       </Fragment>
+
     );
   }
 }
