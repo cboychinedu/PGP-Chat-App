@@ -43,6 +43,22 @@ class DatabaseManager:
             self.connection.close()
             self.connection = None
 
+    # Get user by email only 
+    def verifyUserByEmail(self, email): 
+        """Verify if a user exists in the database by email"""
+        conn = self.connect() 
+        cursor = conn.cursor() 
+
+        # Sql query to check for existing username or email address 
+        query = "SELECT password, username, email FROM users WHERE email = ?"
+        cursor.execute(query, (email,))
+
+        # Fetch one result for the query 
+        result = cursor.fetchone() 
+
+        # Return the result 
+        return result 
+
     # Retrive verify a user from the database 
     def verifyUser(self, username, email): 
         """Verify if a user exists in the database by username or email address."""
@@ -61,22 +77,26 @@ class DatabaseManager:
     
     # Save the user to the database 
     def saveUser(self, username, email, password, fullname): 
-        pass 
+        # Connect to the database 
+        conn = self.connect() 
+        cursor = conn.cursor()
 
-    # def execute_query(self, query, params=()):
-    #     """Execute a SQL query and return the results."""
-    #     conn = self.connect()
-    #     cursor = conn.cursor()
-    #     cursor.execute(query, params)
-    #     results = cursor.fetchall()
-    #     conn.commit()
-    #     return results
+        # Getting the user data
+        userData = (username, fullname, email, password)
 
-    # def __enter__(self):
-    #     """Enable use of 'with' statement for automatic connection management."""
-    #     self.connect()
-    #     return self
+        # SQL query to save the users 
+        query = "INSERT INTO users (username, fullname, email, password) VALUES (?, ?, ?, ?)"
+        cursor.execute(query, userData)
 
-    # def __exit__(self, exc_type, exc_value, traceback):
-    #     """Ensure the connection is closed when exiting 'with' block."""
-    #     self.close()
+        # Print the changes 
+        conn.commit() 
+
+        # Display a status message 
+        print("[INFO]: User registered.")
+        
+        # Return the data 
+        return {
+            "message": "Successful", 
+            "status": "success", 
+            "statusCode": 200 
+        }   

@@ -8,3 +8,4 @@ print(f"Hashed password: {hashed_password}")
 # Check if a password is correct
 is_match = bcrypt.checkpw(b'mysecretpassword', hashed_password)
 print(f"Password matches: {is_match}")
+ 
