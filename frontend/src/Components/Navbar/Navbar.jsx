@@ -1,4 +1,5 @@
 // Importing the necessary modules
+import pgpLogo from "@images/pgpLogo.jpg"
 import React, { Fragment, useState } from "react";
 
 // Icons for the mobile menu
@@ -29,7 +30,10 @@ const Navbar = () => {
                     <div className="flex justify-between items-center">
                         
                         {/* Logo / Brand */}
-                        <a href="/" className="text-2xl font-bold text-blue-300">PGP Secure Chat</a>
+                        <div className="flex items-center justify-between"> 
+                            <img src={pgpLogo} alt="PGP Logo" className="h-[43px] mr-[17px] w-[45px] rounded-[40px]"/>
+                            <a href="/" className="text-2xl font-bold text-blue-300">PGP Secure Chat</a> 
+                        </div>
                         
                         {/* Desktop Navigation (Visible on screen sizes 'sm' and larger) */}
                         <nav className="hidden sm:flex items-center space-x-6">
