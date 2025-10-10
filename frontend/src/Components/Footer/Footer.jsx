@@ -45,7 +45,7 @@ const Footer = () => (
                             <a href="/faq" className="hover:text-blue-200 transition-colors">FAQ</a>
                         </li>
                         <li>
-                            <a href="/blog" className="hover:text-blue-200 transition-colors">Blog</a>
+                            <a href="/blogs" className="hover:text-blue-200 transition-colors">Blog</a>
                         </li>
                         <li>
                             <a href="/careers" className="hover:text-blue-200 transition-colors">Careers</a>
@@ -57,13 +57,13 @@ const Footer = () => (
                     <div className="font-semibold mb-2">Resources</div>
                     <ul className="space-y-1 text-sm">
                         <li>
-                            <a href="/docs" className="hover:text-blue-200 transition-colors">Documentation</a>
+                            <a href="/documentation" className="hover:text-blue-200 transition-colors">Documentation</a>
                         </li>
                         <li>
-                            <a href="/privacy" className="hover:text-blue-200 transition-colors">Privacy Policy</a>
+                            <a href="/privacypolicy" className="hover:text-blue-200 transition-colors">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="/terms" className="hover:text-blue-200 transition-colors">Terms of Service</a>
+                            <a href="/termsofservice" className="hover:text-blue-200 transition-colors">Terms of Service</a>
                         </li>
                         <li>
                             <a href="/security" className="hover:text-blue-200 transition-colors">Security</a>
