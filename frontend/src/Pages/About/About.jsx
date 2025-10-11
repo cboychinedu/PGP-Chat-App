@@ -7,7 +7,11 @@
 // Importing the necessary modules 
 import React, { Fragment } from 'react';
 import Navbar from "@components/Navbar/Navbar"; 
+import DashboardNavbar from "@components/Navbar/DashboardNavbar"; 
 import Footer from '@components/Footer/Footer';
+
+// Getting the user token 
+let tokenValue = localStorage.getItem("xAuthToken") || null; 
 
 // Icons reused and added for context
 const BookOpenIcon = (props) => (
@@ -43,7 +47,7 @@ const About = () => {
     return (
         <Fragment>
             <div className="min-h-screen bg-gray-900 font-sans text-white">
-                <Navbar />
+                {tokenValue ? <DashboardNavbar/> : <Navbar />}
 
                 <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 

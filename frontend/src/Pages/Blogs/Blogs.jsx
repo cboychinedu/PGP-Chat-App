@@ -5,8 +5,9 @@
  * * It maintains the application's dark blue theme and structure.
  */
 
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import Navbar from "@components/Navbar/Navbar";
+import DashboardNavbar from '@components/Navbar/DashboardNavbar';
 import Footer from '@components/Footer/Footer';
 
 // Icons for the UI
@@ -20,7 +21,10 @@ const TagIcon = (props) => (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12.5 12.5 16 16m3 3-6.5-6.5zm0-10-11 11a2 2 0 0 0 0 2l10 10a2 2 0 0 0 2 0l11-11a2 2 0 0 0 0-3L12.5 4a2 2 0 0 0-2 0z"/></svg>
 );
 
+// Getting the user token 
+let tokenValue = localStorage.getItem("xAuthToken") || null; 
 
+// Creating the section title 
 const SectionTitle = ({ children }) => (
     <h2 className="text-4xl md:text-5xl font-extrabold text-blue-300 mb-6 border-b-4 border-blue-500 pb-2 inline-block">
         {children}
@@ -59,6 +63,7 @@ const blogPosts = [
     },
 ];
 
+// Creating the blog post card 
 const BlogPostCard = ({ post }) => (
     <div className="bg-blue-900/80 p-6 rounded-xl shadow-xl transition-all duration-300 hover:bg-blue-800 hover:shadow-2xl border border-blue-700/50">
         <h3 className="text-3xl font-bold text-white mb-3 hover:text-blue-300 cursor-pointer transition">
@@ -84,12 +89,14 @@ const BlogPostCard = ({ post }) => (
     </div>
 );
 
-
+// Creating the blog component 
 const Blog = () => {
+    // Returning the jsx component 
     return (
         <Fragment>
             <div className="min-h-screen bg-gray-900 font-sans text-white">
-                <Navbar />
+                {/* Adding the navbar for dashboard and home user's */}
+                {tokenValue ? <DashboardNavbar/> : <Navbar />}
 
                 <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 

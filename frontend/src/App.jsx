@@ -53,6 +53,8 @@ class App extends Component {
             {/* Setting the routes configuration */}
             <Routes> 
                 <Route path="/dashboard" element={<Dashboard />} /> 
+                <Route path="/about" element={<About />} /> 
+                <Route path="/blogs" element={<Blog />} />
                 <Route path="*" exact={true} element={<Dashboard />} /> 
             </Routes>
           </BrowserRouter>
