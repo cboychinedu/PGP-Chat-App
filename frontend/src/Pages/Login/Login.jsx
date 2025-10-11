@@ -94,18 +94,26 @@ const Login = () => {
                         setFlashSeverity("success"); 
                         setFlashOpen(true); 
 
-                        // Getting the token value 
-                        const tokenValue = responseData.token; 
-                        localStorage.setItem('xAuthToken', tokenValue); 
-                        setToken(tokenValue); 
+                        // Using set interval to display the redirection page 
+                        setInterval(() => {
+                            setFlashMessage("Redirecting to the dashboard page..."); 
+                            setFlashSeverity("success"); 
+                            setFlashOpen(true); 
 
-                        console.log(tokenValue);
+                            // Wait for anoter 5 seconds and redirect the user to the 
+                            // dashboard page 
+                            setInterval(() => {
+                                // Getting the token value 
+                                const tokenValue = responseData.token; 
+                                localStorage.setItem('xAuthToken', tokenValue); 
 
-                        // Wait for another 5 seconds and redirect the user to the login page 
-                        // setInterval(() => {
-                        //     // Redirect the user to the dashboard page 
-                        //     window.location.href = "/dashboard"; 
-                        // }, 5000); 
+                                // Setting the user token into session storage
+                                setToken(tokenValue);
+
+                                // Redirect the user to the dashboard page 
+                                window.location.href = "/dashboard";
+                            }, 5000)
+                        }, 5000)
                     }
                 })
             }
@@ -173,7 +181,7 @@ const Login = () => {
                         </div>
 
                         {/* Adding the form div */}
-                        <form onSubmit={handleSubmit}>
+                        <form>
                             {/* Adding the username/email div */}
                             <div> 
                                 <label className='block text-sm font-medium text-blue-200 mb-1'> Username or Email </label>
@@ -202,6 +210,7 @@ const Login = () => {
 
                             <button
                                 type="submit"
+                                onClick={handleSubmit}
                                 className="w-full mt-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300 transform hover:scale-[1.01]"
                             >
                                 Login Securely
@@ -209,7 +218,7 @@ const Login = () => {
                         </form>
 
                         <p className="mt-6 text-center text-blue-300">
-                            Don’t have an account?
+                            Don't have an account?
                             <a href="/register" className="ml-2 font-bold text-blue-400 hover:text-blue-300 transition duration-150">
                                 Register Now
                             </a>

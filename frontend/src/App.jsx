@@ -55,6 +55,8 @@ class App extends Component {
                 <Route path="/dashboard" element={<Dashboard />} /> 
                 <Route path="/about" element={<About />} /> 
                 <Route path="/blogs" element={<Blog />} />
+                <Route path="/careers" element={<Career />} />
+                <Route path="/documentation" element={<Documentation />} /> 
                 <Route path="*" exact={true} element={<Dashboard />} /> 
             </Routes>
           </BrowserRouter>

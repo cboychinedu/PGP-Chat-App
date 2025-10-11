@@ -2,11 +2,31 @@
 import os
 import logging
 from datetime import timedelta
-from flask import Flask, jsonify, request
+from flask import Flask, request
 from Socket.extensions import socketio
 from dotenv import load_dotenv
 from flask_cors import CORS
 from Home.homeRoute import home
+
+
+# --- ANSI Color Definition ---
+# ANSI escape code for green color and reset
+GREEN = '\033[92m'
+RESET = '\033[0m'
+
+# --- Custom Formatter Class ---
+class GreenConsoleFormatter(logging.Formatter):
+    """Custom Formatter to color the entire log message green."""
+    
+    # Define the format string with color codes
+    COLOR_FORMAT = f"{GREEN}%(asctime)s - %(levelname)s - %(message)s{RESET}"
+    DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
+    
+    def format(self, record):
+        # Create a new formatter instance using the colored format string
+        formatter = logging.Formatter(self.COLOR_FORMAT, datefmt=self.DATE_FORMAT)
+        return formatter.format(record)
+
 
 # Load environment variables from .env file
 load_dotenv()
@@ -31,6 +51,10 @@ os.makedirs(logsDir, exist_ok=True)
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
+# Clear existing handlers to prevent duplicate messages
+if logger.hasHandlers():
+    logger.handlers.clear()
+
 # File handler for loggin 
 fileHandler = logging.FileHandler(logFilePath)
 fileHandler.setLevel(logging.DEBUG)
@@ -44,10 +68,13 @@ fileHandler.setFormatter(fileFormatter)
 # Console handler
 consoleHandler = logging.StreamHandler()
 consoleHandler.setLevel(logging.DEBUG)
-consoleFormatter = logging.Formatter(
-    "%(asctime)s - %(levelname)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
-)
-consoleHandler.setFormatter(consoleFormatter)
+
+# --- APPLY THE CUSTOM GREEN FORMATTER ---
+consoleHandler.setFormatter(GreenConsoleFormatter())
+# consoleFormatter = logging.Formatter( # Removed original line
+#     "%(asctime)s - %(levelname)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
+# )
+# consoleHandler.setFormatter(consoleFormatter) # Removed original line
 
 # Add handlers to the logger
 logger.addHandler(fileHandler)

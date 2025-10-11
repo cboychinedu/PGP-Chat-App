@@ -77,7 +77,7 @@ const Register = () => {
 
         // Checking if the password field is the same with 
         // the verify password 
-        else if (password != verifyPassword) {
+        else if (password !== verifyPassword) {
             // Setting the flash message 
             setFlashMessage("Passwords are not correct!"); 
             setFlashSeverity("error"); 
@@ -130,7 +130,7 @@ const Register = () => {
                         setInterval(() => {
                             // Display this message after 3 seconds
                             setFlashMessage("Redirecting to the login page..."); 
-                            setFlashSeverity("success")
+                            setFlashSeverity("success"); 
                             setFlashOpen(true);
  
                             // Wait for another 3 seconds and redirect the user to 
