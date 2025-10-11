@@ -19,7 +19,7 @@ app.secret_key = os.getenv("SECRET_KEY")
 app.permanent_session_lifetime = timedelta(days=24)
 
 
-# Enable CORS
+# Enable CORS configuration 
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Set up the path to the logs directory and file
@@ -31,12 +31,14 @@ os.makedirs(logsDir, exist_ok=True)
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
-# File handler
+# File handler for loggin 
 fileHandler = logging.FileHandler(logFilePath)
 fileHandler.setLevel(logging.DEBUG)
 fileFormatter = logging.Formatter(
     "%(asctime)s - %(levelname)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
 )
+
+# Set the file handler format
 fileHandler.setFormatter(fileFormatter)
 
 # Console handler
@@ -59,9 +61,8 @@ def logRequestInfo():
 # Initialize Socket.IO with CORS allowed origins
 socketio.init_app(app, cors_allowed_origins="*")
 
-# Register blueprints 
+# Register blueprints for the application
 app.register_blueprint(home, url_prefix="/")
-
 
 # Run the main Flask application
 if __name__ == "__main__":
