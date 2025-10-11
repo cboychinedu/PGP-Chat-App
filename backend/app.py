@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 from flask_cors import CORS
 from Home.homeRoute import home
 
-
 # --- ANSI Color Definition ---
 # ANSI escape code for green color and reset
 GREEN = '\033[92m'

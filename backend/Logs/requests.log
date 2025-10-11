@@ -10,3 +10,19 @@
 2025-10-11 20:34:23 - INFO - 127.0.0.1 - - [11/Oct/2025 20:34:23] "OPTIONS /login HTTP/1.1" 200 -
 2025-10-11 20:34:23 - INFO - Request: POST /login - IP: 127.0.0.1
 2025-10-11 20:34:23 - INFO - 127.0.0.1 - - [11/Oct/2025 20:34:23] "POST /login HTTP/1.1" 200 -
+2025-10-11 20:56:00 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:3001
+2025-10-11 20:56:00 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-11 20:56:00 - INFO -  * Restarting with stat
+2025-10-11 20:56:00 - WARNING -  * Debugger is active!
+2025-10-11 20:56:00 - INFO -  * Debugger PIN: 116-560-793
+2025-10-11 20:56:28 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-11 20:56:28 - INFO - 127.0.0.1 - - [11/Oct/2025 20:56:28] "POST /register HTTP/1.1" 200 -
+2025-10-11 20:57:06 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Database/database.py', reloading
+2025-10-11 20:57:06 - INFO -  * Restarting with stat
+2025-10-11 20:57:07 - WARNING -  * Debugger is active!
+2025-10-11 20:57:07 - INFO -  * Debugger PIN: 116-560-793
+2025-10-11 20:57:13 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-11 20:57:13 - INFO - 127.0.0.1 - - [11/Oct/2025 20:57:13] "POST /register HTTP/1.1" 200 -
+2025-10-11 20:57:26 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-11 20:57:26 - INFO - 127.0.0.1 - - [11/Oct/2025 20:57:26] "POST /login HTTP/1.1" 200 -
