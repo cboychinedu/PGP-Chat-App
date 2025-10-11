@@ -1,13 +1,21 @@
 // Importing the necessary modules 
-import { Fragment, useState } from 'react';
+import { Fragment, useContext, useState } from 'react';
+import { AuthContext } from "@auth/Auth"; 
 import Navbar from '@components/Navbar/Navbar';
 import Footer from '@components/Footer/Footer';
 import LockIcon from '@components/Icons/LockIcon';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
+import DashboardNavbar from "@components/Navbar/DashboardNavbar"; 
+
+// Getting the user token 
+let tokenValue = localStorage.getItem("xAuthToken") || null; 
 
 // Creating the login component  
 const Login = () => {
+    // Get the setToken from context so we can store the auth token globally 
+    const { setToken } = useContext(AuthContext); 
+
     // Setting the state 
     const [email, setEmail] = useState(""); 
     const [password, setPassword] = useState(""); 
@@ -50,7 +58,67 @@ const Login = () => {
         // Else if all the fields are filled execute the block 
         // of code below 
         else {
-            // 
+            // Converting the user input into a JSON object 
+            const userData = JSON.stringify({
+                "email": email, 
+                "password": password, 
+            }); 
+
+            // Defining the server url for the login route 
+            const serverUrl = `${process.env.REACT_APP_SERVER_URL}/login`; 
+
+            // using try-catch block to handle the fetch request 
+            try {
+                // Sending the POST request to the server 
+                fetch(serverUrl, {
+                    method: "POST", 
+                    "headers": { "Content-Type": "application/json"}, 
+                    body: userData, 
+                })
+                // Handling the response from the server 
+                .then((response) => response.json())
+                .then((responseData) => {
+                    // if the response data was an error 
+                    if (responseData.status === "error") {
+                        // Display the error message to the user 
+                        setFlashMessage(responseData.message); 
+                        setFlashSeverity("error"); 
+                        setFlashOpen(true); 
+                        return; 
+                    }
+
+                    // Else if the status was a success 
+                    else if (responseData.status === "success") {
+                        // Display it to the user 
+                        setFlashMessage(responseData.message); 
+                        setFlashSeverity("success"); 
+                        setFlashOpen(true); 
+
+                        // Getting the token value 
+                        const tokenValue = responseData.token; 
+                        localStorage.setItem('xAuthToken', tokenValue); 
+                        setToken(tokenValue); 
+
+                        console.log(tokenValue);
+
+                        // Wait for another 5 seconds and redirect the user to the login page 
+                        // setInterval(() => {
+                        //     // Redirect the user to the dashboard page 
+                        //     window.location.href = "/dashboard"; 
+                        // }, 5000); 
+                    }
+                })
+            }
+
+            // Catch block 
+            catch (error) {
+                // Catch the error 
+                console.log("Fetch Error: ", error); 
+                setFlashMessage(error); 
+                setFlashSeverity("error"); 
+                setFlashOpen(true);
+
+            }
         }
     };
 
@@ -59,7 +127,7 @@ const Login = () => {
         <Fragment>
             <main className="bg-gray-900">
                 {/* Adding the navbar */}
-                <Navbar />
+                {tokenValue ? <DashboardNavbar /> : <Navbar />}
 
                 {/* Flash Message */}
                 <Snackbar

@@ -87,7 +87,8 @@ def register():
 def login():
     # Getting the user data from the request 
     data = request.get_json()
-    username = data.get("username")
+
+    # Getting the user email and username 
     email = data.get("email")
     password = data.get("password")
 

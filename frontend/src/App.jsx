@@ -26,10 +26,22 @@ class App extends Component {
   // Getting the auth context
   static contextType = AuthContext; 
 
-  // Rendering the component 
-  render() {
+  // using component did mount to set the initial token value 
+  // this runs after the initial render and prevents the infinit loop
+  componentDidMount() {
     // Gettin the context data 
-    const { isLoggedIn, xAuthToken } = this.context; 
+    const { setToken } = this.context; 
+
+    // Set the token value only once when the component mounts 
+    if (tokenValue !== null) {
+      setToken(tokenValue); 
+    }
+  }
+
+  // Rendering the component 
+  render() { 
+    // Gettin the context data 
+    const { isLoggedIn, xAuthToken } = this.context;
 
     // If the token value, and isLogged condtion 
     // is true, execute the block of code below
@@ -39,7 +51,10 @@ class App extends Component {
         <Fragment>
           <BrowserRouter> 
             {/* Setting the routes configuration */}
-            <Route path="/dashboard" element={<Dashboard />} /> 
+            <Routes> 
+                <Route path="/dashboard" element={<Dashboard />} /> 
+                <Route path="*" exact={true} element={<Dashboard />} /> 
+            </Routes>
           </BrowserRouter>
         </Fragment>
        )

@@ -1,9 +1,8 @@
 // Importing the necessary libraries and components
+import App from "./App";
 import "./index.css"; 
-import React from 'react';
 import { AuthContextProvider } from "./Auth/Auth";
 import ReactDOM from 'react-dom/client';
-import App from './App';
 
 // Rendering the main App component into the root element of the HTML
 const root = ReactDOM.createRoot(document.getElementById('root'));
