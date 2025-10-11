@@ -37,6 +37,9 @@ app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 app.secret_key = os.getenv("SECRET_KEY")
 app.permanent_session_lifetime = timedelta(days=24)
 
+# Getting the host, and port address 
+serverHost = os.getenv("SERVER_ADDR")
+serverPort = os.getenv("SERVER_PORT")
 
 # Enable CORS configuration 
 CORS(app, resources={r"/*": {"origins": "*"}})
@@ -95,7 +98,7 @@ if __name__ == "__main__":
     socketio.run(
         app,
         debug=True,
-        host="localhost",
-        port=3001,
+        host=serverHost,
+        port=serverPort,
         allow_unsafe_werkzeug=True
     )
