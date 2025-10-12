@@ -57,6 +57,13 @@ class App extends Component {
                 <Route path="/blogs" element={<Blog />} />
                 <Route path="/careers" element={<Career />} />
                 <Route path="/documentation" element={<Documentation />} /> 
+                <Route path="/faq" element={<FAQ />} />
+                <Route path="/features" element={<Features />} />
+                <Route path="/howitworks" element={<HowItWorks /> } /> 
+                <Route path="privacypolicy" element={<PrivacyPolicy /> } /> 
+                <Route path="/security" element={<Security />} /> 
+                <Route path="/support" element={<Support />} />
+                <Route path="/termsofservice" element={<TermsOfService />} /> 
                 <Route path="*" exact={true} element={<Dashboard />} /> 
             </Routes>
           </BrowserRouter>

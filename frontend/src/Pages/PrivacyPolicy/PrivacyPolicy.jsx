@@ -6,7 +6,11 @@
 
 import React, { Fragment } from 'react';
 import Navbar from "@components/Navbar/Navbar";
+import DashboardNavbar from "@components/Navbar/DashboardNavbar"; 
 import Footer from '@components/Footer/Footer';
+
+// Getting the user token 
+let tokenValue = localStorage.getItem("xAuthToken") || null; 
 
 // Icons for the UI
 const ShieldIcon = (props) => (
@@ -16,19 +20,13 @@ const LockIcon = (props) => (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
 );
 
-
-const SectionTitle = ({ children }) => (
-    <h2 className="text-4xl md:text-5xl font-extrabold text-blue-300 mb-6 border-b-4 border-blue-500 pb-2 inline-block">
-        {children}
-    </h2>
-);
-
-
+// Privacy policy 
 const PrivacyPolicy = () => {
     return (
         <Fragment>
             <div className="min-h-screen bg-gray-900 font-sans text-white">
-                <Navbar />
+                {/* Adding the navbar  */}
+                {tokenValue ? <DashboardNavbar/> : <Navbar />}
 
                 <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
