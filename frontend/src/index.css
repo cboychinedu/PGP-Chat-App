@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Setting the body of the component */ 
+body {
+    background-color: rgb(20 28 43);
+}
