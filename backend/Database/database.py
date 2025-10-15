@@ -50,8 +50,8 @@ class DatabaseManager:
         cursor = conn.cursor() 
 
         # Sql query to check for existing username or email address 
-        query = "SELECT password, username, email FROM users WHERE email = ?"
-        cursor.execute(query, (email,))
+        query = "SELECT password, username, email FROM users WHERE email = ? OR username = ?"
+        cursor.execute(query, (email, email))
 
         # Fetch one result for the query 
         result = cursor.fetchone() 
