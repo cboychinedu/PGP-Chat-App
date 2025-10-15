@@ -98,6 +98,15 @@ def login():
         # Getting the user details 
         usersData = db.verifyUserByEmail(email=email)
 
+        # if the user data returns none 
+        if (usersData == None): 
+            # Execute the block of code below 
+            return jsonify({
+                "message": "Invalid Username/email or password", 
+                "status": "error", 
+                "statusCode": 404
+            })
+
         # Validating the user 
         passwordHash = usersData[0]
         username = usersData[1]

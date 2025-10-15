@@ -38,3 +38,79 @@
 2025-10-11 23:08:56 - INFO -  * Restarting with stat
 2025-10-11 23:08:56 - WARNING -  * Debugger is active!
 2025-10-11 23:08:56 - INFO -  * Debugger PIN: 116-560-793
+2025-10-15 22:38:36 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-15 22:38:36 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 22:40:13 - INFO -  * Restarting with watchdog (fsevents)
+2025-10-15 22:40:13 - WARNING -  * Debugger is active!
+2025-10-15 22:40:13 - INFO -  * Debugger PIN: 134-844-914
+2025-10-15 22:40:32 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:3001
+2025-10-15 22:40:32 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 22:40:32 - INFO -  * Restarting with stat
+2025-10-15 22:40:32 - WARNING -  * Debugger is active!
+2025-10-15 22:40:32 - INFO -  * Debugger PIN: 116-560-793
+2025-10-15 22:40:40 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-15 22:40:40 - INFO - 127.0.0.1 - - [15/Oct/2025 22:40:40] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-15 22:40:40 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-15 22:40:40 - INFO - 127.0.0.1 - - [15/Oct/2025 22:40:40] "POST /login HTTP/1.1" 200 -
+2025-10-15 22:40:53 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-15 22:40:53 - INFO - 127.0.0.1 - - [15/Oct/2025 22:40:53] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-15 22:40:53 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-15 22:40:53 - INFO - 127.0.0.1 - - [15/Oct/2025 22:40:53] "POST /login HTTP/1.1" 200 -
+2025-10-15 22:41:51 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-15 22:41:51 - INFO - 127.0.0.1 - - [15/Oct/2025 22:41:51] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-15 22:41:51 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-15 22:41:51 - INFO - 127.0.0.1 - - [15/Oct/2025 22:41:51] "POST /login HTTP/1.1" 200 -
+2025-10-15 22:43:18 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-15 22:43:18 - INFO -  * Restarting with stat
+2025-10-15 22:43:18 - WARNING -  * Debugger is active!
+2025-10-15 22:43:18 - INFO -  * Debugger PIN: 116-560-793
+2025-10-15 22:43:27 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-15 22:43:27 - INFO - 127.0.0.1 - - [15/Oct/2025 22:43:27] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-15 22:43:27 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-15 22:43:27 - INFO - 127.0.0.1 - - [15/Oct/2025 22:43:27] "POST /login HTTP/1.1" 200 -
+2025-10-15 22:43:54 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-15 22:43:54 - INFO - 127.0.0.1 - - [15/Oct/2025 22:43:54] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-15 22:43:54 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-15 22:43:54 - INFO - 127.0.0.1 - - [15/Oct/2025 22:43:54] "POST /login HTTP/1.1" 200 -
+2025-10-15 22:44:05 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-15 22:44:05 - INFO - 127.0.0.1 - - [15/Oct/2025 22:44:05] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-15 22:44:05 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-15 22:44:05 - INFO - 127.0.0.1 - - [15/Oct/2025 22:44:05] "POST /login HTTP/1.1" 200 -
+2025-10-15 22:45:20 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-15 22:45:20 - INFO -  * Restarting with stat
+2025-10-15 22:45:20 - WARNING -  * Debugger is active!
+2025-10-15 22:45:20 - INFO -  * Debugger PIN: 116-560-793
+2025-10-15 22:45:23 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-15 22:45:23 - INFO - 127.0.0.1 - - [15/Oct/2025 22:45:23] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-15 22:45:23 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-15 22:45:23 - INFO - 127.0.0.1 - - [15/Oct/2025 22:45:23] "POST /login HTTP/1.1" 200 -
+2025-10-15 22:47:36 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-15 22:47:36 - INFO -  * Restarting with stat
+2025-10-15 22:47:36 - WARNING -  * Debugger is active!
+2025-10-15 22:47:36 - INFO -  * Debugger PIN: 116-560-793
+2025-10-15 22:47:50 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Home/homeRoute.py', reloading
+2025-10-15 22:47:50 - INFO -  * Restarting with stat
+2025-10-15 22:47:51 - WARNING -  * Debugger is active!
+2025-10-15 22:47:51 - INFO -  * Debugger PIN: 116-560-793
+2025-10-15 22:48:24 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-15 22:48:24 - INFO - 127.0.0.1 - - [15/Oct/2025 22:48:24] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-15 22:48:24 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-15 22:48:24 - INFO - 127.0.0.1 - - [15/Oct/2025 22:48:24] "POST /login HTTP/1.1" 200 -
+2025-10-15 22:49:03 - INFO - Request: OPTIONS /register - IP: 127.0.0.1
+2025-10-15 22:49:03 - INFO - 127.0.0.1 - - [15/Oct/2025 22:49:03] "OPTIONS /register HTTP/1.1" 200 -
+2025-10-15 22:49:03 - INFO - Request: POST /register - IP: 127.0.0.1
+2025-10-15 22:49:03 - INFO - 127.0.0.1 - - [15/Oct/2025 22:49:03] "POST /register HTTP/1.1" 200 -
+2025-10-15 22:49:17 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-15 22:49:17 - INFO - 127.0.0.1 - - [15/Oct/2025 22:49:17] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-15 22:49:17 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-15 22:49:17 - INFO - 127.0.0.1 - - [15/Oct/2025 22:49:17] "POST /login HTTP/1.1" 200 -
+2025-10-15 22:49:31 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-15 22:49:31 - INFO - 127.0.0.1 - - [15/Oct/2025 22:49:31] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-15 22:49:31 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-15 22:49:31 - INFO - 127.0.0.1 - - [15/Oct/2025 22:49:31] "POST /login HTTP/1.1" 200 -
+2025-10-15 22:49:42 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-15 22:49:42 - INFO - 127.0.0.1 - - [15/Oct/2025 22:49:42] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-15 22:49:42 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-15 22:49:42 - INFO - 127.0.0.1 - - [15/Oct/2025 22:49:42] "POST /login HTTP/1.1" 200 -
