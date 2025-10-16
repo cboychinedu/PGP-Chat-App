@@ -14,6 +14,9 @@ import DashboardNavbar from "@components/Navbar/DashboardNavbar";
 import PGPChatDialog from "./PgpComponent/PgpChatDialog";
 import Footer from '@components/Footer/Footer';
 
+// Getting the token variable 
+let tokenValue = localStorage.getItem("xAuthToken") || null; 
+
 // Setting the server url 
 const backendUrl = `${process.env.REACT_APP_SERVER_URL}/dashboard/users`; 
 
@@ -40,7 +43,71 @@ const Dashboard = () => {
     const [selectedUser, setSelectedUser] = useState(null);
     const [searchResults, setSearchResults] = useState([]); 
     const [isSearching, setIsSearching] = useState(false); 
-    const [fetchError, setFetchError] = useState(null); // New state for error handling
+    const [fetchError, setFetchError] = useState(null); 
+    const [loggedInUserName, setLoggedInUserName] = useState(null); 
+
+    // Creating a function for getting the user logged in username 
+    const getLoggedInUserName = async () => {
+        // Using try catch block 
+        try {
+            // if the token value is not present, set the username as 
+            // gues 
+            if (!tokenValue) {
+                // Redirect the user to the login page 
+                localStorage.clear(); 
+
+                // Redirecting the user to the login page 
+                setInterval(() => {
+                    // Redirecting the user to the home page 
+                    window.location.href = "/"; 
+                }, 3000)
+            }
+
+            // Making a request to the backend to get the logged in username 
+            const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/dashboard/username`, {
+                method: "POST", 
+                headers: {
+                    "Content-Type": "application/json", 
+                    "token": tokenValue,
+                }
+            }); 
+
+            // If there is no response, set the username to an error state 
+            if (!response.ok) {
+                // Log the error, redirect the user to the login page
+                console.error("Failed to fetch the username: ", response.status, response.statusText); 
+
+                // Redirecting the user to the login/home page 
+                setInterval(() => {
+                    // Redirecting the user to the home page 
+                    window.location.href = "/"; 
+                }, 3000) 
+            }
+
+            // Get the user data and save the user logging usename 
+            let loggedInUserName = await response.json() 
+
+            // Setting the logged in user name 
+            setLoggedInUserName(loggedInUserName.username);
+
+        }
+
+        // Catching the error 
+        catch (error) {
+            // On error to the server, execute the block 
+            // of code below 
+            console.log("Error fetching the username: ", error); 
+
+            // Redirecting the user to the login page 
+            localStorage.clear(); 
+
+            // Redirecting the user to the login page 
+            setInterval(() => {
+                // Redirecting the user to the home page 
+                window.location.href = "/"; 
+            }, 3000)
+        }
+    }
 
     /**
      * @function fetchUsersByUsername
@@ -80,6 +147,7 @@ const Dashboard = () => {
             if (data.status === "success") {
                 // Getting the search results 
                 setSearchResults(data.user); 
+ 
             }
 
             else {
@@ -102,6 +170,10 @@ const Dashboard = () => {
      * I've added a simple debounce here to prevent spamming the server on every keystroke.
      */
     useEffect(() => {
+        // 
+        getLoggedInUserName(); 
+
+        // 
         if (searchTerm.trim().length > 0) {
             // Debounce: Wait 300ms after the last keystroke before fetching
             const delayFetch = setTimeout(() => {
@@ -134,7 +206,11 @@ const Dashboard = () => {
                 {/* Adding the dashboard navbar */}
                 <DashboardNavbar />
 
-                <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 mt-[125px] mb-[8em]">
+                <div className="px-20 py-0 pt-[60px] pl-[50px]"> 
+                    <p> Welcome <span className="text-[#2663eb] ml-[5px]"> {loggedInUserName} </span> </p>
+                </div>
+
+                <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 mt-[30px] mb-[8em]">
                     
                     {/* Header (omitted for brevity) */}
                     <header className="text-center mb-12">
@@ -205,7 +281,13 @@ const Dashboard = () => {
 
                 {/* PGP Chat Dialog */}
                 {selectedUser && (
-                    <PGPChatDialog recipient={selectedUser} onClose={handleCloseChat} />
+                    <PGPChatDialog 
+                        recipient={selectedUser} 
+                        onClose={handleCloseChat} 
+                        socket={socket} 
+                        loggedInUser={loggedInUserName}
+                        searchUser={searchResults}
+                    />
                 )}
 
                 {/* Adding the footer */}

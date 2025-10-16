@@ -32,7 +32,7 @@ const Navbar = () => {
                         {/* Logo / Brand */}
                         <div className="flex items-center justify-between"> 
                             <img src={pgpLogo} alt="PGP Logo" className="h-[43px] mr-[17px] w-[45px] rounded-[40px]"/>
-                            <a href="/" className="text-2xl font-bold text-blue-300">PGP Secure Chat</a> 
+                            <a href="/" className="text-2xl font-bold text-blue-300">Secure Chat</a> 
                         </div>
                         
                         {/* Desktop Navigation (Visible on screen sizes 'sm' and larger) */}

@@ -9,7 +9,6 @@ from Socket.extensions import socketio
 # Getting the secret key 
 secretKey = os.getenv("SECRET_KEY")
 
-
 # Creating an instance of the database manager 
 db = DatabaseManager() 
 
@@ -17,18 +16,19 @@ db = DatabaseManager()
 dashboard = Blueprint('dashboard', __name__)
 
 # Creating a function to display the chat user 
-def chatUser(sid, message, firstuser, secondUser): 
+def chatUser(text, receiver):
+    print(text); 
+    print(receiver);  
     pass 
 
 # Event listener for chatting 
-@socketio.on("chatUser")
+@socketio.on("chatMessage")
 def handleChat(data): 
     # Start the background task for chatting with the user 
     socketio.start_background_task(
         chatUser, 
-        data.get("message"), 
-        data.get("firstUser"), 
-        data.get("secondUser")
+        data.get("text"),
+        data.get("receiver")
     )
 
 # Get users 
@@ -84,6 +84,33 @@ def getSearchUsers():
     
 
 # Route for the dashborad page 
-@dashboard.route("/", methods=["POST"])
-def getDashboardUser(): 
-    pass 
+@dashboard.route("/username", methods=["POST"])
+def getDashboardUser():
+    # Getting the request headers 
+    tokenValue = request.headers.get("token")
+
+    # Decoding the token value 
+    try:
+        # jwt.decode() automatically verifies the signature, the expiration date ('exp'),
+        # and other standard claims if they are present.
+        payload = jwt.decode(
+            tokenValue,
+            secretKey,
+            algorithms=["HS256"] 
+        ) 
+
+        # send the decoded token as a json object 
+        print("[INFO]: Token successfully decoded and verified.")
+        return jsonify(payload)
+    
+    # if there was an error decoding the token value 
+    except jwt.ExpiredSignatureError:
+        # Displaying the error message 
+        print("[INFO]: Token is expired. Authentication failed.")
+
+        # Error decoding the token 
+        return jsonify({
+            "message": "Error decoding token", 
+            "status": "error", 
+            "statusCode": 404, 
+        })

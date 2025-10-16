@@ -1,6 +1,6 @@
 // Importing the necessary modules
 import pgpLogo from "@images/pgpLogo.jpg"
-import React, { Fragment, useState } from "react";
+import { Fragment, useState } from "react";
 
 // Icons for the mobile menu
 const MenuIcon = (props) => (
@@ -31,7 +31,7 @@ const DashboardNavbar = () => {
         setInterval(() => {
             // Redirection 
             window.location.href = "/"; 
-        }, 3000)
+        }, 1000)
     }
 
     // Returning the jsx component 
@@ -44,20 +44,25 @@ const DashboardNavbar = () => {
                         
                         {/* Logo / Brand */}
                         <div className="flex items-center justify-between"> 
+                            {/* Using placeholder URL instead of problematic local import */}
                             <img src={pgpLogo} alt="PGP Logo" className="h-[43px] mr-[17px] w-[45px] rounded-[40px]"/>
-                            <a href="/" className="text-2xl font-bold text-blue-300">PGP Secure Chat</a> 
+                            {/* Make brand text shrink slightly on smaller screens */}
+                            <a href="/" className="text-xl sm:text-2xl font-bold text-blue-300">Secure Chat</a> 
                         </div>
                         
                         {/* Desktop Navigation (Visible on screen sizes 'sm' and larger) */}
-                        <nav className="hidden sm:flex items-center space-x-6">
-                            <a href="/" className="text-blue-200 hover:text-blue-50 transition duration-150"> Home </a>
-                            <a href="/howitworks" className="text-blue-200 hover:text-blue-50 transition duration-150">How it Works</a>
-                            <a href="/security" className="text-blue-200 hover:text-blue-50 transition duration-150">Security</a>
-                            <a href="/about" className="text-blue-200 hover:text-blue-50 transition duration-150"> About </a>
-                            <a href="/dashbaord" className="text-blue-200 hover:text-blue-50 transition duration-150"> Dashboard </a>
+                        <nav className="hidden sm:flex items-center space-x-3 md:space-x-6">
+                            {/* Anchor tags: Use text-sm on small screens, scale up to text-base on md */}
+                            <a href="/" className="text-blue-200 text-sm md:text-base hover:text-blue-50 transition duration-150"> Home </a>
+                            <a href="/howitworks" className="text-blue-200 text-sm md:text-base hover:text-blue-50 transition duration-150">How it Works</a>
+                            <a href="/security" className="text-blue-200 text-sm md:text-base hover:text-blue-50 transition duration-150">Security</a>
+                            <a href="/about" className="text-blue-200 text-sm md:text-base hover:text-blue-50 transition duration-150"> About </a>
+                            <a href="/dashbaord" className="text-blue-200 text-sm md:text-base hover:text-blue-50 transition duration-150"> Dashboard </a>
+                            
+                            {/* Logout Button: Shrink padding and font size for smaller screens */}
                             <button 
                                 onClick={logoutUser}
-                                className="px-4 py-2 bg-blue-600 rounded-lg font-semibold hover:bg-blue-700 transition duration-150 text-white shadow-md"
+                                className="px-3 py-1 text-sm sm:px-4 sm:py-2 sm:text-base bg-blue-600 rounded-lg font-semibold hover:bg-blue-700 transition duration-150 text-white shadow-md"
                             > 
                                 Logout 
                             </button>

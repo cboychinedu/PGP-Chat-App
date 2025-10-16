@@ -1,8 +1,9 @@
 // Importing the necessary modules 
+import io from "socket.io-client"; 
 import { Fragment, useState, useEffect } from 'react';
 
 // PGP chat dialog 
-const PGPChatDialog = ({ recipient, onClose, user }) => {
+const PGPChatDialog = ({ recipient, onClose, socket, searchUser}) => {
     // ... (PGP_ChatDialog logic and JSX omitted for brevity) ...
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
@@ -30,12 +31,20 @@ const PGPChatDialog = ({ recipient, onClose, user }) => {
     // Creating a function to handle the send key word 
     const handleSend = () => {
         if (message.trim() && isKeyReady) {
+            
+            // 
             const newMessage = {
                 id: Date.now(),
                 text: message,
                 sender: 'Me',
+                receiver: searchUser,
                 status: isKeyReady ? 'Encrypted & Sent' : 'Error',
             };
+
+            // 
+            socket.emit("chatMessage", newMessage); 
+
+            // 
             setMessages(prev => [...prev, newMessage]);
             setMessage('');
         }

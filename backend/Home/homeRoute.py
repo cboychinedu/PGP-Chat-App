@@ -125,7 +125,7 @@ def login():
             payload = {
                 "email": email, 
                 "username": username,
-                "exp": datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(minutes=30)
+                "exp": datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=10)
             
             }
 
