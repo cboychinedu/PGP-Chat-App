@@ -9,7 +9,7 @@ databasePath = os.path.join(os.path.dirname(__file__), 'database.db')
 class DatabaseManager:
     def __init__(self):
         self.dbPath = databasePath
-        self.connection = None
+        self.connection = None # Using camelCase for variable names
 
     # Creating a method to connect to the database
     def connect(self):
@@ -19,16 +19,21 @@ class DatabaseManager:
             # if the connection is not established, create a new one
             if self.connection is None:
                 # Connect to the SQLite database 
-                self.connection = sqlite3.connect(self.dbPath)
+                # FIX: Add check_same_thread=False to allow cross-thread use
+                self.connection = sqlite3.connect(self.dbPath, check_same_thread=False) 
 
                 # Connected to the db 
-                print("[INFO]: Conneted to the database")
+                print("[INFO]: Connected to the database")
             
             # Return the connection object 
             return self.connection
         
         # Except exception on error 
         except Exception as error: 
+            # Displaying the error message 
+            print("[INFO]: Error connecting to the database")
+            print(error); 
+            
             # Could not connect to the database 
             return str(error)
         
@@ -61,7 +66,10 @@ class DatabaseManager:
 
     # Retrive verify a user from the database 
     def verifyUser(self, username, email): 
-        """Verify if a user exists in the database by username or email address."""
+        """
+        Verify if a user exists in the database by username or email address.
+        Returns the user data (username, fullname, email) as a tuple, or None if not found.
+        """
         conn = self.connect()
         cursor = conn.cursor()
         
@@ -72,8 +80,8 @@ class DatabaseManager:
         # Fetch one result from the executed query
         result = cursor.fetchone()
         
-        # Return True if a user is found, otherwise False
-        return result is not None
+        # Returns the fetched result (user data or None)
+        return result
     
     # Save the user to the database 
     def saveUser(self, username, email, password, fullname): 
@@ -99,4 +107,4 @@ class DatabaseManager:
             "message": "Successful", 
             "status": "success", 
             "statusCode": 200 
-        }   
+        }

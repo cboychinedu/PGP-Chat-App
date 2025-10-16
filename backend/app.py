@@ -7,6 +7,7 @@ from Socket.extensions import socketio
 from dotenv import load_dotenv
 from flask_cors import CORS
 from Home.homeRoute import home
+from Dashboard.dashboardRoute import dashboard
 from LogFormatter.LogFormatter import GreenConsoleFormatter
 
 # Load environment variables from .env file
@@ -70,6 +71,7 @@ socketio.init_app(app, cors_allowed_origins="*")
 
 # Register blueprints for the application
 app.register_blueprint(home, url_prefix="/")
+app.register_blueprint(dashboard, url_prefix="/dashboard")
 
 # Run the main Flask application
 if __name__ == "__main__":

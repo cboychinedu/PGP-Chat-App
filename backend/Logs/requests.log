@@ -144,3 +144,389 @@
 2025-10-15 23:04:17 - INFO - 127.0.0.1 - - [15/Oct/2025 23:04:17] "OPTIONS /login HTTP/1.1" 200 -
 2025-10-15 23:04:17 - INFO - Request: POST /login - IP: 127.0.0.1
 2025-10-15 23:04:18 - INFO - 127.0.0.1 - - [15/Oct/2025 23:04:18] "POST /login HTTP/1.1" 200 -
+2025-10-16 10:39:11 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:3001
+2025-10-16 10:39:11 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 10:39:11 - INFO -  * Restarting with stat
+2025-10-16 10:39:11 - WARNING -  * Debugger is active!
+2025-10-16 10:39:11 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 10:40:00 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-16 10:40:00 - INFO - 127.0.0.1 - - [16/Oct/2025 10:40:00] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-16 10:40:00 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-16 10:40:01 - INFO - 127.0.0.1 - - [16/Oct/2025 10:40:01] "POST /login HTTP/1.1" 200 -
+2025-10-16 10:40:07 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-16 10:40:07 - INFO - 127.0.0.1 - - [16/Oct/2025 10:40:07] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-16 10:40:07 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-16 10:40:07 - INFO - 127.0.0.1 - - [16/Oct/2025 10:40:07] "POST /login HTTP/1.1" 200 -
+2025-10-16 10:49:48 - INFO - Request: OPTIONS /users - IP: 127.0.0.1
+2025-10-16 10:49:48 - INFO - 127.0.0.1 - - [16/Oct/2025 10:49:48] "[33mOPTIONS /users HTTP/1.1[0m" 404 -
+2025-10-16 10:49:59 - INFO - Request: OPTIONS /users - IP: 127.0.0.1
+2025-10-16 10:49:59 - INFO - 127.0.0.1 - - [16/Oct/2025 10:49:59] "[33mOPTIONS /users HTTP/1.1[0m" 404 -
+2025-10-16 10:51:05 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Dashboard/dashboardRoute.py', reloading
+2025-10-16 10:51:05 - INFO -  * Restarting with stat
+2025-10-16 10:51:06 - WARNING -  * Debugger is active!
+2025-10-16 10:51:06 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 10:51:48 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Dashboard/dashboardRoute.py', reloading
+2025-10-16 10:51:48 - INFO -  * Restarting with stat
+2025-10-16 10:51:49 - WARNING -  * Debugger is active!
+2025-10-16 10:51:49 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 10:53:16 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/app.py', reloading
+2025-10-16 10:53:17 - INFO -  * Restarting with stat
+2025-10-16 10:53:17 - WARNING -  * Debugger is active!
+2025-10-16 10:53:17 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 10:55:05 - INFO - Request: OPTIONS /users - IP: 127.0.0.1
+2025-10-16 10:55:05 - INFO - 127.0.0.1 - - [16/Oct/2025 10:55:05] "[33mOPTIONS /users HTTP/1.1[0m" 404 -
+2025-10-16 10:56:07 - INFO - Request: OPTIONS /users - IP: 127.0.0.1
+2025-10-16 10:56:07 - INFO - 127.0.0.1 - - [16/Oct/2025 10:56:07] "[33mOPTIONS /users HTTP/1.1[0m" 404 -
+2025-10-16 10:59:18 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 10:59:18 - INFO - 127.0.0.1 - - [16/Oct/2025 10:59:18] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 10:59:18 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 10:59:18 - INFO - 127.0.0.1 - - [16/Oct/2025 10:59:18] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 10:59:31 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 10:59:31 - INFO - 127.0.0.1 - - [16/Oct/2025 10:59:31] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 10:59:31 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 10:59:31 - INFO - 127.0.0.1 - - [16/Oct/2025 10:59:31] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:00:43 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:00:43 - INFO - 127.0.0.1 - - [16/Oct/2025 11:00:43] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:00:43 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:00:43 - INFO - 127.0.0.1 - - [16/Oct/2025 11:00:43] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:00:43 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:00:43 - INFO - 127.0.0.1 - - [16/Oct/2025 11:00:43] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:02:26 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Dashboard/dashboardRoute.py', reloading
+2025-10-16 11:02:26 - INFO -  * Restarting with stat
+2025-10-16 11:02:43 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:3001
+2025-10-16 11:02:43 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 11:02:43 - INFO -  * Restarting with stat
+2025-10-16 11:02:44 - WARNING -  * Debugger is active!
+2025-10-16 11:02:44 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:08:16 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Dashboard/dashboardRoute.py', reloading
+2025-10-16 11:08:16 - INFO -  * Restarting with stat
+2025-10-16 11:08:17 - WARNING -  * Debugger is active!
+2025-10-16 11:08:17 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:08:41 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:08:41 - INFO - 127.0.0.1 - - [16/Oct/2025 11:08:41] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:08:41 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:08:41 - INFO - 127.0.0.1 - - [16/Oct/2025 11:08:41] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:08:42 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:08:42 - INFO - 127.0.0.1 - - [16/Oct/2025 11:08:42] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:08:46 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:08:46 - INFO - 127.0.0.1 - - [16/Oct/2025 11:08:46] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:08:46 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:08:46 - INFO - 127.0.0.1 - - [16/Oct/2025 11:08:46] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:08:47 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:08:47 - INFO - 127.0.0.1 - - [16/Oct/2025 11:08:47] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:11:45 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Database/database.py', reloading
+2025-10-16 11:11:45 - INFO -  * Restarting with stat
+2025-10-16 11:11:46 - WARNING -  * Debugger is active!
+2025-10-16 11:11:46 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:11:59 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:11:59 - INFO - 127.0.0.1 - - [16/Oct/2025 11:11:59] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:11:59 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:11:59 - INFO - 127.0.0.1 - - [16/Oct/2025 11:11:59] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:12:00 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:12:00 - INFO - 127.0.0.1 - - [16/Oct/2025 11:12:00] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:14:26 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:14:26 - INFO - 127.0.0.1 - - [16/Oct/2025 11:14:26] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:14:26 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:14:26 - INFO - 127.0.0.1 - - [16/Oct/2025 11:14:26] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:14:51 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:3001
+2025-10-16 11:14:51 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 11:14:51 - INFO -  * Restarting with stat
+2025-10-16 11:14:51 - WARNING -  * Debugger is active!
+2025-10-16 11:14:51 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:14:56 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:14:56 - INFO - 127.0.0.1 - - [16/Oct/2025 11:14:56] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:14:56 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:14:56 - INFO - 127.0.0.1 - - [16/Oct/2025 11:14:56] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:14:59 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:14:59 - INFO - 127.0.0.1 - - [16/Oct/2025 11:14:59] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:17:00 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Dashboard/dashboardRoute.py', reloading
+2025-10-16 11:17:01 - INFO -  * Restarting with stat
+2025-10-16 11:17:01 - WARNING -  * Debugger is active!
+2025-10-16 11:17:01 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:17:27 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:17:27 - INFO - 127.0.0.1 - - [16/Oct/2025 11:17:27] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:17:27 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:17:27 - INFO - 127.0.0.1 - - [16/Oct/2025 11:17:27] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:17:29 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:17:29 - INFO - 127.0.0.1 - - [16/Oct/2025 11:17:29] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:18:44 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Dashboard/dashboardRoute.py', reloading
+2025-10-16 11:18:44 - INFO -  * Restarting with stat
+2025-10-16 11:18:44 - WARNING -  * Debugger is active!
+2025-10-16 11:18:44 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:18:53 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:18:53 - INFO - 127.0.0.1 - - [16/Oct/2025 11:18:53] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:18:53 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:18:53 - INFO - 127.0.0.1 - - [16/Oct/2025 11:18:53] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:18:54 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:18:54 - INFO - 127.0.0.1 - - [16/Oct/2025 11:18:54] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:19:18 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:19:18 - INFO - 127.0.0.1 - - [16/Oct/2025 11:19:18] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:19:18 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:19:18 - INFO - 127.0.0.1 - - [16/Oct/2025 11:19:18] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:19:18 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:19:18 - INFO - 127.0.0.1 - - [16/Oct/2025 11:19:18] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:19:19 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:19:19 - INFO - 127.0.0.1 - - [16/Oct/2025 11:19:19] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:19:50 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Dashboard/dashboardRoute.py', reloading
+2025-10-16 11:19:50 - INFO -  * Restarting with stat
+2025-10-16 11:19:51 - WARNING -  * Debugger is active!
+2025-10-16 11:19:51 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:19:55 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Dashboard/dashboardRoute.py', reloading
+2025-10-16 11:19:55 - INFO -  * Restarting with stat
+2025-10-16 11:19:55 - WARNING -  * Debugger is active!
+2025-10-16 11:19:55 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:20:37 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:20:37 - INFO - 127.0.0.1 - - [16/Oct/2025 11:20:37] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:20:37 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:20:37 - INFO - 127.0.0.1 - - [16/Oct/2025 11:20:37] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:20:41 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:20:41 - INFO - 127.0.0.1 - - [16/Oct/2025 11:20:41] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:20:42 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:20:42 - INFO - 127.0.0.1 - - [16/Oct/2025 11:20:42] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:20:57 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:20:57 - INFO - 127.0.0.1 - - [16/Oct/2025 11:20:57] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:20:57 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:20:57 - INFO - 127.0.0.1 - - [16/Oct/2025 11:20:57] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:20:59 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:20:59 - INFO - 127.0.0.1 - - [16/Oct/2025 11:20:59] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:02 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:02 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:02] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:02 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:02 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:02] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:03 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:03 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:03] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:04 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:04 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:04] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:04 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:04 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:04] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:06 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:06 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:06] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:08 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:08 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:08] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:08 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:08 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:08] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:20 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:20 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:20] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:20 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:20 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:20] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:21:23 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:23 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:23] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:21:26 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:26 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:26] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:26 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:26 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:26] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:21:28 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:28 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:28] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:21:46 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:46 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:46] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:21:46 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:46 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:46] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:21:47 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:21:47 - INFO - 127.0.0.1 - - [16/Oct/2025 11:21:47] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:21:56 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:3001
+2025-10-16 11:21:56 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 11:21:56 - INFO -  * Restarting with stat
+2025-10-16 11:21:56 - WARNING -  * Debugger is active!
+2025-10-16 11:21:56 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:22:02 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:22:02 - INFO - 127.0.0.1 - - [16/Oct/2025 11:22:02] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:22:02 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:22:02 - INFO - 127.0.0.1 - - [16/Oct/2025 11:22:02] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:22:03 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:22:03 - INFO - 127.0.0.1 - - [16/Oct/2025 11:22:03] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:22:06 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:22:06 - INFO - 127.0.0.1 - - [16/Oct/2025 11:22:06] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:22:19 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:22:19 - INFO - 127.0.0.1 - - [16/Oct/2025 11:22:19] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:22:19 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:22:19 - INFO - 127.0.0.1 - - [16/Oct/2025 11:22:19] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:22:22 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:22:22 - INFO - 127.0.0.1 - - [16/Oct/2025 11:22:22] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:22:40 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Dashboard/dashboardRoute.py', reloading
+2025-10-16 11:22:40 - INFO -  * Restarting with stat
+2025-10-16 11:22:41 - WARNING -  * Debugger is active!
+2025-10-16 11:22:41 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:22:51 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:22:51 - INFO - 127.0.0.1 - - [16/Oct/2025 11:22:51] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:22:51 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:22:51 - INFO - 127.0.0.1 - - [16/Oct/2025 11:22:51] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:22:59 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:22:59 - INFO - 127.0.0.1 - - [16/Oct/2025 11:22:59] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:22:59 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:22:59 - INFO - 127.0.0.1 - - [16/Oct/2025 11:22:59] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:23:00 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:23:00 - INFO - 127.0.0.1 - - [16/Oct/2025 11:23:00] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:23:00 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:23:00 - INFO - 127.0.0.1 - - [16/Oct/2025 11:23:00] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:23:02 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:23:02 - INFO - 127.0.0.1 - - [16/Oct/2025 11:23:02] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:23:04 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:23:04 - INFO - 127.0.0.1 - - [16/Oct/2025 11:23:04] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:23:04 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:23:04 - INFO - 127.0.0.1 - - [16/Oct/2025 11:23:04] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:23:14 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:23:14 - INFO - 127.0.0.1 - - [16/Oct/2025 11:23:14] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:23:14 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:23:14 - INFO - 127.0.0.1 - - [16/Oct/2025 11:23:14] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:23:16 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:23:16 - INFO - 127.0.0.1 - - [16/Oct/2025 11:23:16] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:23:17 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:23:17 - INFO - 127.0.0.1 - - [16/Oct/2025 11:23:17] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:23:18 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:23:18 - INFO - 127.0.0.1 - - [16/Oct/2025 11:23:18] "[35m[1mPOST /dashboard/users HTTP/1.1[0m" 500 -
+2025-10-16 11:25:36 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Database/database.py', reloading
+2025-10-16 11:25:36 - INFO -  * Restarting with stat
+2025-10-16 11:27:33 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:3001
+2025-10-16 11:27:33 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 11:27:33 - INFO -  * Restarting with stat
+2025-10-16 11:27:33 - WARNING -  * Debugger is active!
+2025-10-16 11:27:33 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:27:43 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:27:43 - INFO - 127.0.0.1 - - [16/Oct/2025 11:27:43] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:27:43 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:27:43 - INFO - 127.0.0.1 - - [16/Oct/2025 11:27:43] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:27:46 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:27:46 - INFO - 127.0.0.1 - - [16/Oct/2025 11:27:46] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:27:48 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:27:48 - INFO - 127.0.0.1 - - [16/Oct/2025 11:27:48] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:27:55 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:27:55 - INFO - 127.0.0.1 - - [16/Oct/2025 11:27:55] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:27:55 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:27:55 - INFO - 127.0.0.1 - - [16/Oct/2025 11:27:55] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:27:57 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:27:57 - INFO - 127.0.0.1 - - [16/Oct/2025 11:27:57] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:27:59 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:27:59 - INFO - 127.0.0.1 - - [16/Oct/2025 11:27:59] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:27:59 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:27:59 - INFO - 127.0.0.1 - - [16/Oct/2025 11:27:59] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:28:00 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:28:00 - INFO - 127.0.0.1 - - [16/Oct/2025 11:28:00] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:28:00 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:28:00 - INFO - 127.0.0.1 - - [16/Oct/2025 11:28:00] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:28:02 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:28:02 - INFO - 127.0.0.1 - - [16/Oct/2025 11:28:02] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:28:24 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:28:24 - INFO - 127.0.0.1 - - [16/Oct/2025 11:28:24] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:28:24 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:28:24 - INFO - 127.0.0.1 - - [16/Oct/2025 11:28:24] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:28:25 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:28:25 - INFO - 127.0.0.1 - - [16/Oct/2025 11:28:25] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:30:35 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Database/database.py', reloading
+2025-10-16 11:30:35 - INFO -  * Restarting with stat
+2025-10-16 11:30:35 - WARNING -  * Debugger is active!
+2025-10-16 11:30:35 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:30:44 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:30:44 - INFO - 127.0.0.1 - - [16/Oct/2025 11:30:44] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:30:44 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:30:44 - INFO - 127.0.0.1 - - [16/Oct/2025 11:30:44] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:30:46 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:30:46 - INFO - 127.0.0.1 - - [16/Oct/2025 11:30:46] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:30:50 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:30:50 - INFO - 127.0.0.1 - - [16/Oct/2025 11:30:50] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:30:50 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:30:50 - INFO - 127.0.0.1 - - [16/Oct/2025 11:30:50] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:30:52 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:30:52 - INFO - 127.0.0.1 - - [16/Oct/2025 11:30:52] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:30:54 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:30:54 - INFO - 127.0.0.1 - - [16/Oct/2025 11:30:54] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:30:56 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:30:56 - INFO - 127.0.0.1 - - [16/Oct/2025 11:30:56] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:30:56 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:30:56 - INFO - 127.0.0.1 - - [16/Oct/2025 11:30:56] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:30:56 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:30:56 - INFO - 127.0.0.1 - - [16/Oct/2025 11:30:56] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:30:57 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:30:57 - INFO - 127.0.0.1 - - [16/Oct/2025 11:30:57] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:00 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:00 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:00] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:01 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:01 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:01] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:01 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:01 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:01] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:03 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:03 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:03] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:06 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:06 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:06] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:06 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:06 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:06] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:08 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:08 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:08] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:09 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:09 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:09] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:11 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:11 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:11] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:11 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:11 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:11] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:14 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:14 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:14] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:14 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:14 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:14] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:16 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:16 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:16] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:16 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:16 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:16] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:17 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:31:17 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:17] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:31:38 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-16 11:31:38 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:38] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-16 11:31:38 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-16 11:31:38 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:38] "POST /login HTTP/1.1" 200 -
+2025-10-16 11:31:46 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2025-10-16 11:31:46 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:46] "OPTIONS /login HTTP/1.1" 200 -
+2025-10-16 11:31:46 - INFO - Request: POST /login - IP: 127.0.0.1
+2025-10-16 11:31:46 - INFO - 127.0.0.1 - - [16/Oct/2025 11:31:46] "POST /login HTTP/1.1" 200 -
+2025-10-16 11:38:38 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/PGP-Chat-App/backend/Dashboard/dashboardRoute.py', reloading
+2025-10-16 11:38:38 - INFO -  * Restarting with stat
+2025-10-16 11:38:39 - WARNING -  * Debugger is active!
+2025-10-16 11:38:39 - INFO -  * Debugger PIN: 116-560-793
+2025-10-16 11:38:47 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:38:47 - INFO - 127.0.0.1 - - [16/Oct/2025 11:38:47] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:38:47 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:38:47 - INFO - 127.0.0.1 - - [16/Oct/2025 11:38:47] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:38:51 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:38:51 - INFO - 127.0.0.1 - - [16/Oct/2025 11:38:51] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:39:21 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:39:21 - INFO - 127.0.0.1 - - [16/Oct/2025 11:39:21] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:39:21 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:39:21 - INFO - 127.0.0.1 - - [16/Oct/2025 11:39:21] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:39:24 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:39:24 - INFO - 127.0.0.1 - - [16/Oct/2025 11:39:24] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:49:07 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:49:07 - INFO - 127.0.0.1 - - [16/Oct/2025 11:49:07] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:49:07 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:49:07 - INFO - 127.0.0.1 - - [16/Oct/2025 11:49:07] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:49:08 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:49:08 - INFO - 127.0.0.1 - - [16/Oct/2025 11:49:08] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:50:57 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:50:57 - INFO - 127.0.0.1 - - [16/Oct/2025 11:50:57] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:50:57 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:50:57 - INFO - 127.0.0.1 - - [16/Oct/2025 11:50:57] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:50:58 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:50:58 - INFO - 127.0.0.1 - - [16/Oct/2025 11:50:58] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:50:58 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:50:58 - INFO - 127.0.0.1 - - [16/Oct/2025 11:50:58] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:51:00 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:51:00 - INFO - 127.0.0.1 - - [16/Oct/2025 11:51:00] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:51:00 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:51:00 - INFO - 127.0.0.1 - - [16/Oct/2025 11:51:00] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:53:15 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:53:15 - INFO - 127.0.0.1 - - [16/Oct/2025 11:53:15] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:53:15 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:53:15 - INFO - 127.0.0.1 - - [16/Oct/2025 11:53:15] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:53:23 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:53:23 - INFO - 127.0.0.1 - - [16/Oct/2025 11:53:23] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:53:23 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:53:23 - INFO - 127.0.0.1 - - [16/Oct/2025 11:53:23] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:53:44 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:53:44 - INFO - 127.0.0.1 - - [16/Oct/2025 11:53:44] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:53:44 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:53:44 - INFO - 127.0.0.1 - - [16/Oct/2025 11:53:44] "POST /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:54:00 - INFO - Request: OPTIONS /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:54:00 - INFO - 127.0.0.1 - - [16/Oct/2025 11:54:00] "OPTIONS /dashboard/users HTTP/1.1" 200 -
+2025-10-16 11:54:00 - INFO - Request: POST /dashboard/users - IP: 127.0.0.1
+2025-10-16 11:54:00 - INFO - 127.0.0.1 - - [16/Oct/2025 11:54:00] "POST /dashboard/users HTTP/1.1" 200 -

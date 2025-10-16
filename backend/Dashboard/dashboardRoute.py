@@ -31,6 +31,58 @@ def handleChat(data):
         data.get("secondUser")
     )
 
+# Get users 
+@dashboard.route("/users", methods=["POST"])
+def getSearchUsers(): 
+    # Getting the request parameters 
+    data = request.get_json()
+
+    # Checking if the data is valid 
+    if (data): 
+        # Check the database to see if the user with the specified username is 
+        # present 
+        # Getting the username 
+        username = data["username"]
+
+        # Making a request to the database 
+        user = db.verifyUser(username, username)
+
+        # if the user exist execute this block of code 
+        if (user):
+            # Setting the user data 
+            userData = [{
+                "username": user[0],
+                "fullaname": user[1], 
+                "email": user[2]
+            }] 
+
+            # Execute this block of code if the user is found 
+            return jsonify({
+                "status": "success", 
+                "message": "user found",
+                "user": userData, 
+            })
+        
+        # else if the user was not found 
+        else: 
+            # No user was found 
+            return jsonify({
+                "status": "error", 
+                "message": "User not found", 
+                "user": [], 
+            })
+
+    else: 
+        # Return an error message saying the user with the specified username is 
+        # Not found on the database 
+        # No data was found 
+        return jsonify({
+            "status": "error", 
+            "message": "No user was found", 
+            "user": []
+        })
+    
+
 # Route for the dashborad page 
 @dashboard.route("/", methods=["POST"])
 def getDashboardUser(): 
